@@ -2,7 +2,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |name|text|null: false, foreign_key: true|
 |e-mail|text|null: false, foreign_key: true|
 |pass|text|null: false, foreign_key: true|
@@ -16,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false, foreign_key: true|
+|group_name|text|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
