@@ -1,0 +1,57 @@
+!!!
+%html
+
+%head
+
+%body
+.header
+  グループを作成しました。
+
+.wrapper
+  .wrapper__clearfix
+  .wrapper__side-var
+    .wrapper__side-var__header
+      名前
+      .wrapper__side-var__header__icon
+      =link_to "http://localhost:3000/" do
+        = fa_icon 'edit',class: "wrapper__side-var__header__icon__new"
+      =link_to "http://localhost:3000/" do
+        = fa_icon 'cog', class: "wrapper__side-var__header__icon__configration"
+    .wrapper__side-var__margin
+    .wrapper__side-var__groups
+      .wrapper__side-var__groups__groupname
+        .wrapper__side-var__groups__groupname__name
+          グループ名
+        .wrapper__side-var__groups__groupname__message
+          メッセージ
+
+  .wrapper__main
+    .wrapper__main__clearfix
+    .wrapper__main__header
+      .wrapper__main__header__groupname
+        .wrapper__main__header__groupname__clearfix
+        .wrapper__main__header__groupname__name
+          グループ名
+        .wrapper__main__header__groupname__member
+          メンバー
+      .wrapper__main__header__edit
+        Edit
+    .wrapper__main__messages
+      .wrapper__main__messages__comment
+        .wrapper__main__messages__comment__margin
+        .wrapper__main__messages__comment__user
+          .wrapper__main__messages__comment__user__name
+            名前
+          .wrapper__main__messages__comment__user__date
+            日時
+        .wrapper__main__messages__comment__text
+          テキスト
+    .wrapper__main__form
+      .wrapper__main__form__typespace
+        .wrapper__main__form__typespace__message
+          type a massage
+        .wrapper__main__form__typespace__icon
+          =link_to "http://localhost:3000/" do
+            = fa_icon 'image'
+      .wrapper__main__form__send
+        send

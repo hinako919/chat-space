@@ -1,0 +1,175 @@
+@import "./reset";
+@import "font-awesome";
+
+.header {
+  float: left;
+  height: 20px;
+  width: 100vw;
+  background-color: #38AEF0;
+  color: #ffffff;
+  position:  fixed;
+  text-align: center;
+}
+
+.wrapper {
+  float: left;
+  margin-top: 20px;
+  height: 1000px;
+  width: 100vw;
+  &__side-var {
+    float: left;
+    height: 100%;
+    width: 300px;
+    background-color: #2f3e51;
+    font-weight: bold;
+    color: #ffffff;
+    &__header {
+      height: 60px;
+      line-height: 60px;
+      background-color: #253141;
+      font-size: 16px;
+      padding : 20px;
+      &__icon{
+      float: right;
+      }
+    }
+    &__margin {
+      height: 20px;
+    }
+    &__groups {
+      &__groupname {
+        padding : 20px;
+        &__name{
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__message{
+          font-size: 11px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+  &__main {
+    float: left;
+    position: relative;
+    width: calc(100vw - 300px);
+    height: 1000px;
+    color: #434A54;
+    &__clearfix {
+      content: "";
+      clear: both;
+      display: block;
+    }
+    &__header {
+      height: 100px;
+      width: 100%;
+      border-bottom: #eeeeee;
+      padding-left : 40px;
+      padding-right : 40px;
+      &__groupname {
+        float: left;
+        height: 100px;
+        width: 1350px;
+        &__clearfix {
+          content: "";
+          clear: both;
+          display: block;
+        }
+        &__name {
+          margin-top: 35px;
+          font-size: 20px;
+        }
+        &__member {
+          margin-top: 15px;
+          font-size: 12px;
+        }
+      }
+      &__edit {
+        float: left;
+        margin-top: 28px;
+        margin-left: 15px;
+        height: 40px;
+        width: 70px;
+        border: 1px solid #38AEF0;
+        color:#38AEF0;
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+    &__messages {
+      height: calc(100% - 180px);
+      width: 100%;
+      background-color: #fafafa;
+      &__comment {
+        padding-left : 40px;
+        padding-right : 40px;
+        &__margin {
+          height: 46px;
+          width: 100%;
+        }
+        &__user {
+          height: 16px;
+          width: 100%;
+          margin-bottom: 10px;
+          &__name {
+            float: left;
+            font-size: 16px;
+          }
+          &__date {
+            float: left;
+            
+            color: #999999;
+            font-size: 12px;
+          }
+        }
+        &__text {
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &__form {
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+      width: 100%;
+      background-color: gray;
+      padding-left : 40px;
+      padding-right : 40px;
+      &__typespace {
+        float: left;
+        background-color:white;
+        height: 50px;
+        width: 1350px;
+        margin-top: 15px;
+        &__message {
+          float: left;
+          font-size: 16px;
+          color: #434A54;
+          padding-top: 10px;
+          padding-left: 10px;
+        }
+          &__icon {
+          float: right;
+          padding-top : 15px;
+          padding-right : 10px;
+        }
+
+      }
+      &__send {
+        float: left;
+        margin-left : 15px;
+        margin-top: 15px;
+        height: 50px;
+        width: 80px;
+        background-color: #38AEF0;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+      }
+    }
+  }
+}
